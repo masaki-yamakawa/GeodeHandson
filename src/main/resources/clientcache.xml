@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<client-cache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://geode.apache.org/schema/cache"
+  xsi:schemaLocation="http://geode.apache.org/schema/cache http://geode.apache.org/schema/cache/cache-1.0.xsd"
+  version="1.0" copy-on-read="false">
+
+  <pool name="ClientPool" subscription-enabled="true">
+    <locator host="localhost" port="10334" />
+  </pool>
+
+  <region name="ChatMessage">
+    <region-attributes refid="CACHING_PROXY" pool-name="ClientPool">
+      <cache-listener>
+        <class-name>geode.handson.cui.ChatMessageListener</class-name>
+      </cache-listener>
+    </region-attributes>
+  </region>
+</client-cache>
