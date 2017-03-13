@@ -29,6 +29,8 @@ Cache cache = factory.create();
 
 CacheFactoryのコンストラクタには、Propertiesを指定することができ、geode.propertiesの値を上書きすることができます。
 実行毎に異なる設定値をAPIで指定することが可能です。
+今回は1つ目のJavaプロセスのみ組み込み式のロケーターを起動するため、start-locatorでlocalhostの10335ポートを指定して起動しています。
+2つ目以降のJavaプロセス起動では1つ目で起動したロケーターを指定して起動することでGeodeクラスターが構成されます。
 
 
 ## リージョンの作成

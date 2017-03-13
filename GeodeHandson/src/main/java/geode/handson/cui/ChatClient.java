@@ -2,34 +2,18 @@ package geode.handson.cui;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Properties;
-
-import org.apache.geode.cache.Region;
-import org.apache.geode.cache.client.ClientCache;
-import org.apache.geode.cache.client.ClientCacheFactory;
 
 /**
  * 標準入力より受け取ったメッセージをチャットリージョンへ登録します。<br>
  * リージョン登録時のキーフォーマットは、{ユーザー名}@{現在日時}@{メッセージ番号}とします。<br>
  */
 public class ChatClient {
-	private static final String REGION_NAME = "ChatMessage";
 	private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
 
 	public static void main(String[] args) throws Exception {
-		// キャッシュ作成
-		Properties props = new Properties();
-		props.setProperty("cache-xml-file", "clientcache.xml");
-		ClientCacheFactory factory = new ClientCacheFactory(props);
 
-		try (ClientCache cache = factory.create();
-			 BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
-
-			// clientcache.xmlに定義したリージョン取得
-			Region<String, String> region = cache.getRegion(REGION_NAME);
-			region.registerInterest("ALL_KEYS");
+		try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
 
 			System.out.println("Enter Username.");
 			String user = br.readLine();
@@ -42,13 +26,9 @@ public class ChatClient {
 				if (message.length() == 0)
 					continue;
 				if (message.equals(":q")) {
-					region.close();
 					break;
 				}
 
-				// リージョンへのメッセージ登録
-				String key = String.format("%s@%s@%d", user, LocalDateTime.now().format(formatter), messageNo++);
-				region.put(key, message);
 			}
 		}
 		System.out.println("Exiting... ");
