@@ -2,17 +2,13 @@ package geode.handson.gui;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Properties;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.apache.geode.cache.CacheClosedException;
 import org.apache.geode.cache.EntryEvent;
-import org.apache.geode.cache.InterestResultPolicy;
 import org.apache.geode.cache.Region;
 import org.apache.geode.cache.client.ClientCache;
 import org.apache.geode.cache.client.ClientCacheFactory;
-import org.apache.geode.cache.client.ClientRegionFactory;
-import org.apache.geode.cache.client.ClientRegionShortcut;
 import org.apache.geode.cache.util.CacheListenerAdapter;
 
 public class ChatClientEndpoint {
@@ -34,10 +30,7 @@ public class ChatClientEndpoint {
 				cache = ClientCacheFactory.getAnyInstance();
 			} catch (CacheClosedException e) {
 				System.out.println("Ignore CacheClosedException");
-				Properties props = new Properties();
-				props.setProperty("cache-xml-file", "guiclientcache.xml");
-				ClientCacheFactory factory = new ClientCacheFactory(props).addPoolLocator(host, port).setPoolSubscriptionEnabled(true);
-				cache = factory.create();
+				// TODO
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -49,9 +42,7 @@ public class ChatClientEndpoint {
 		messageHandler = msgHandler;
 		Region<String, String> region = cache.getRegion(REGION_NAME);
 		if (region == null) {
-			ClientRegionFactory<String, String> rgnFac = cache.createClientRegionFactory(ClientRegionShortcut.CACHING_PROXY);
-			region = rgnFac.addCacheListener(new ChatMessageListener()).create(REGION_NAME);
-			region.registerInterest("ALL_KEYS", InterestResultPolicy.KEYS_VALUES);
+			// TODO
 		}
 	}
 

@@ -10,7 +10,7 @@ Embeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠì¬‚Å‚ÍAƒAƒvƒŠƒP[ƒVƒ‡ƒ“’†‚Éƒf[ƒ^‚ÌŠÇ—‚ğs‚
 ---------------------------- | --------------------------------------------
 geode.handson.cui.ChatClient | ƒNƒ‰ƒCƒAƒ“ƒg-ƒT[ƒo[Œ^‚Ìƒ`ƒƒƒbƒgƒAƒvƒŠ‚ÌMainƒNƒ‰ƒX‚Å‚·B<br>‰Šúó‘Ô‚Å‚ÍEmbeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠ‚Æ“¯‚¶À‘•‚Æ‚È‚è‚Ü‚·B
 /resources/geode.properties  | iEmbeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠì¬‚Æ‹¤—Lj
-/resources/clientcache.xml   | ƒNƒ‰ƒCƒAƒ“ƒgƒLƒƒƒbƒVƒ…iƒŠ[ƒWƒ‡ƒ“j‚ğİ’è‚·‚é‚½‚ß‚Ìƒtƒ@ƒCƒ‹‚Å‚·BƒfƒtƒHƒ‹ƒg‚Å‚ÍEmbeddedƒ‚[ƒh‚Åg—p‚µ‚½cache.xml‚ªg—p‚³‚ê‚Ä‚µ‚Ü‚¤‚½‚ßAgeode.properties‚Ìcache-xml-file‚ğ•ÏX‚·‚é‚©API‚Å•ÏX‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
+/resources/clientcache.xml   | ƒNƒ‰ƒCƒAƒ“ƒgƒLƒƒƒbƒVƒ…iƒŠ[ƒWƒ‡ƒ“j‚ğİ’è‚·‚é‚½‚ß‚Ìƒtƒ@ƒCƒ‹‚Å‚·B<br>ƒfƒtƒHƒ‹ƒg‚Å‚ÍEmbeddedƒ‚[ƒh‚Åg—p‚µ‚½cache.xml‚ªg—p‚³‚ê‚Ä‚µ‚Ü‚¤‚½‚ßAgeode.properties‚Ìcache-xml-file‚ğ•ÏX‚·‚é‚©API‚Å•ÏX‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
 
 
 ## ƒƒP[ƒ^[AƒLƒƒƒbƒVƒ…ƒT[ƒo[‚Ì‹N“®
@@ -40,6 +40,18 @@ gfsh>start locator --name=MyLocator
 gfsh>start server --name=MyCacheServer1
 ```
 
+> **yƒm[ƒgzƒƒP[ƒ^[AƒLƒƒƒbƒVƒ…ƒT[ƒo[‚Ì’â~ **
+>
+> ’â~‚·‚éê‡‚ÍˆÈ‰º‚ÌƒRƒ}ƒ“ƒh‚ğÀs‚µ‚Ü‚·B
+> •K‚¸ƒLƒƒƒbƒVƒ…ƒT[ƒo[‚ğ’â~‚µ‚Ä‚©‚çƒƒP[ƒ^[‚ğ’â~‚µ‚Ä‚­‚¾‚³‚¢B
+>
+> start server --name=MyCacheServer1
+> stop locator --name=MyLocator
+> 
+> WindowsŠÂ‹«‚Å‚ÍƒƒP[ƒ^[‚ª’â~‚µ‚È‚¢ê‡‚ª‚ ‚è‚Ü‚·B
+> ’â~‚µ‚È‚¢ê‡‚Íƒ^ƒXƒNƒ}ƒl[ƒWƒƒ[‚æ‚èI—¹‚³‚¹A“–ŠYƒfƒBƒŒƒNƒgƒŠ‚ğˆê“xíœ‚µ‚ÄÄ“x‹N“®‚µ‚Ä‚­‚¾‚³‚¢B
+
+
 ƒNƒ‰ƒXƒ^[‚Ìó‘Ô‚ğŠm”F‚·‚é‚É‚Ílist members‚ğg—p‚·‚é‚©WebƒRƒ“ƒ\[ƒ‹Pulse‚ğg—p‚µ‚Ü‚·B
 Pulse‚Íadmin/admin‚ÅƒƒOƒCƒ“‚Å‚«‚Ü‚·B
 ¶ã‚ÌCluster View‚ÅƒNƒ‰ƒXƒ^[‚ÌŠÇ—‚ğAData Browser‚ÅOQL‚É‚æ‚éƒf[ƒ^QÆ‚ª‰Â”\‚Å‚·B
@@ -49,7 +61,7 @@ gfsh>list members
 gfsh>start pulse
 ```
 
-![image](pulse.jpg)
+![image](images/pulse.jpg)
 
 
 ## ƒŠ[ƒWƒ‡ƒ“‚Ìì¬
@@ -158,4 +170,4 @@ select * from /ChatMessage cm where cm like 'a%'
 ã‹L‚ÍChatMessageƒŠ[ƒWƒ‡ƒ“‚Ì’l‚ªa‚©‚çn‚Ü‚é‚à‚Ì‘S‚Ä‚ğQÆ‚·‚éê‡‚Ì—á‚Å‚·B
 
 
-![image](databrowser.jpg)
+![image](images/databrowser.jpg)
