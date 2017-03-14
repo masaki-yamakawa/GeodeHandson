@@ -38,9 +38,6 @@
     <VBox prefHeight="83.0" prefWidth="800.0" BorderPane.alignment="CENTER">
       <children>
         <Label text="#general" />
-<!--
-        <Separator orientation="VERTICAL" prefHeight="20.0" visible="false" />
- -->
         <ListView fx:id="chatListView" prefHeight="437.0" prefWidth="657.0" BorderPane.alignment="CENTER" />
 
         <HBox alignment="CENTER" prefHeight="49.0" prefWidth="657.0">
@@ -62,9 +59,4 @@
       </padding>
     </VBox>
   </center>
-<!--
-  <right>
-    <Pane prefHeight="334.0" prefWidth="18.0" BorderPane.alignment="CENTER" />
-  </right>
- -->
 </BorderPane>

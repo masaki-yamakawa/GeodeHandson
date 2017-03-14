@@ -5,7 +5,7 @@
   version="1.0" lock-lease="120" lock-timeout="60" search-timeout="300"
   is-server="false" copy-on-read="false">
   <region name="ChatMessage">
-    <region-attributes data-policy="replicate" scope="distributed-ack">
+    <region-attributes refid="REPLICATE">
       <cache-listener>
         <class-name>geode.handson.cui.ChatMessageListener</class-name>
       </cache-listener>
