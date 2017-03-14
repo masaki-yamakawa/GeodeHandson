@@ -4,7 +4,7 @@
 ----------------------------- | --------------------------------------------
 geode.handson.cui.P2PChat     | EmbeddedモードチャットアプリのMainクラスです。<br>ユーザー名を入力し、標準入力よりメッセージを受け取りためのコードがかかれています。<br>":q"と入力することで終了します。
 /resources/gemfire.properties | 主にgeodeクラスターの設定をするためのファイルです。<br>デフォルトではクラスパス上に存在するgemfire.propertiesを探します。<br>-DgemfirePropertyeFileシステムプロパティを指定することで意図したファイルを読み込むことが可能です。
-/resources/cache.xml          | キャッシュ（リージョン）を設定するためのファイルです。<br>デフォルトではクラスパス上に存在するcache.xmlを探します。<br>geode.propertiesのcache-xml-fileで変更することが可能です。
+/resources/cache.xml          | キャッシュ（リージョン）を設定するためのファイルです。<br>デフォルトではクラスパス上に存在するcache.xmlを探します。<br>gemfire.propertiesのcache-xml-fileで変更することが可能です。
 
 
 ## キャッシュの作成
@@ -27,7 +27,7 @@ CacheFactory factory = new CacheFactory(props);
 Cache cache = factory.create();
 ```
 
-CacheFactoryのコンストラクタには、Propertiesを指定することができ、geode.propertiesの値を上書きすることができます。
+CacheFactoryのコンストラクタには、Propertiesを指定することができ、gemfire.propertiesの値を上書きすることができます。
 実行毎に異なる設定値をAPIで指定することが可能です。
 今回は1つ目のJavaプロセスのみ組み込み式のロケーターを起動するため、start-locatorでlocalhostの10335ポートを指定して起動しています。
 2つ目以降のJavaプロセス起動では1つ目で起動したロケーターを指定して起動することでGeodeクラスターが構成されます。

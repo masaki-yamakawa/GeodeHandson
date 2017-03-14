@@ -10,7 +10,7 @@ Embeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠì¬‚Å‚ÍAƒAƒvƒŠƒP[ƒVƒ‡ƒ“’†‚Éƒf[ƒ^‚ÌŠÇ—‚ğs‚
 ----------------------------- | --------------------------------------------
 geode.handson.cui.ChatClient  | ƒNƒ‰ƒCƒAƒ“ƒg-ƒT[ƒo[Œ^‚Ìƒ`ƒƒƒbƒgƒAƒvƒŠ‚ÌMainƒNƒ‰ƒX‚Å‚·B<br>‰Šúó‘Ô‚Å‚ÍEmbeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠ‚Æ“¯‚¶À‘•‚Æ‚È‚è‚Ü‚·B
 /resources/gemfire.properties | iEmbeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠì¬‚Æ‹¤—Lj
-/resources/clientcache.xml    | ƒNƒ‰ƒCƒAƒ“ƒgƒLƒƒƒbƒVƒ…iƒŠ[ƒWƒ‡ƒ“j‚ğİ’è‚·‚é‚½‚ß‚Ìƒtƒ@ƒCƒ‹‚Å‚·B<br>ƒfƒtƒHƒ‹ƒg‚Å‚ÍEmbeddedƒ‚[ƒh‚Åg—p‚µ‚½cache.xml‚ªg—p‚³‚ê‚Ä‚µ‚Ü‚¤‚½‚ßAgeode.properties‚Ìcache-xml-file‚ğ•ÏX‚·‚é‚©API‚Å•ÏX‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
+/resources/clientcache.xml    | ƒNƒ‰ƒCƒAƒ“ƒgƒLƒƒƒbƒVƒ…iƒŠ[ƒWƒ‡ƒ“j‚ğİ’è‚·‚é‚½‚ß‚Ìƒtƒ@ƒCƒ‹‚Å‚·B<br>ƒfƒtƒHƒ‹ƒg‚Å‚ÍEmbeddedƒ‚[ƒh‚Åg—p‚µ‚½cache.xml‚ªg—p‚³‚ê‚Ä‚µ‚Ü‚¤‚½‚ßAgemfire.properties‚Ìcache-xml-file‚ğ•ÏX‚·‚é‚©API‚Å•ÏX‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
 
 
 ## ƒƒP[ƒ^[AƒLƒƒƒbƒVƒ…ƒT[ƒo[‚Ì‹N“®
@@ -48,6 +48,7 @@ gfsh>start server --name=MyCacheServer1
 > •K‚¸ƒLƒƒƒbƒVƒ…ƒT[ƒo[‚ğ’â~‚µ‚Ä‚©‚çƒƒP[ƒ^[‚ğ’â~‚µ‚Ä‚­‚¾‚³‚¢B
 >
 > start server --name=MyCacheServer1
+>
 > stop locator --name=MyLocator
 > 
 > WindowsŠÂ‹«‚Å‚ÍƒƒP[ƒ^[‚ª’â~‚µ‚È‚¢ê‡‚ª‚ ‚è‚Ü‚·B
