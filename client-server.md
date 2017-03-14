@@ -40,6 +40,8 @@ gfsh>start locator --name=MyLocator
 gfsh>start server --name=MyCacheServer1
 ```
 
+※必要に応じて--bind-addressパラメーターでバインドするアドレスを指定します。
+
 > **【ノート】ロケーター、キャッシュサーバーの停止 **
 >
 > 停止する場合は以下のコマンドを実行します。
