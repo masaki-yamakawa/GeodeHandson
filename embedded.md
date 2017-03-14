@@ -1,10 +1,10 @@
 ## 使用するソース、ファイルの説明
 
-ソース/ファイル             | 説明
---------------------------- | --------------------------------------------
-geode.handson.cui.P2PChat   | EmbeddedモードチャットアプリのMainクラスです。<br>ユーザー名を入力し、標準入力よりメッセージを受け取りためのコードがかかれています。<br>":q"と入力することで終了します。
-/resources/geode.properties | 主にgeodeクラスターの設定をするためのファイルです。<br>デフォルトではクラスパス上に存在するgeode.propertiesを探します。<br>-DgemfirePropertyeFileシステムプロパティを指定することで意図したファイルを読み込むことが可能です。
-/resources/cache.xml        | キャッシュ（リージョン）を設定するためのファイルです。<br>デフォルトではクラスパス上に存在するcache.xmlを探します。<br>geode.propertiesのcache-xml-fileで変更することが可能です。
+ソース/ファイル               | 説明
+----------------------------- | --------------------------------------------
+geode.handson.cui.P2PChat     | EmbeddedモードチャットアプリのMainクラスです。<br>ユーザー名を入力し、標準入力よりメッセージを受け取りためのコードがかかれています。<br>":q"と入力することで終了します。
+/resources/gemfire.properties | 主にgeodeクラスターの設定をするためのファイルです。<br>デフォルトではクラスパス上に存在するgemfire.propertiesを探します。<br>-DgemfirePropertyeFileシステムプロパティを指定することで意図したファイルを読み込むことが可能です。
+/resources/cache.xml          | キャッシュ（リージョン）を設定するためのファイルです。<br>デフォルトではクラスパス上に存在するcache.xmlを探します。<br>geode.propertiesのcache-xml-fileで変更することが可能です。
 
 
 ## キャッシュの作成

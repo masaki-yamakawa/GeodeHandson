@@ -9,7 +9,7 @@
 ソース/ファイル               | 説明
 ----------------------------- | --------------------------------------------
 geode.handson.gui配下のクラス | 一般的なJavaFXアプリケーションです。<br>Geodeとの接続部分はChatClientEndpointへ集約されています。
-/resources/geode.properties   | （クライアント-サーバー型のCUIチャットアプリ作成と共有）
+/resources/gemfire.properties | （クライアント-サーバー型のCUIチャットアプリ作成と共有）
 /resources/guiclientcache.xml | クライアントキャッシュ（リージョン）を設定するためのファイルです。<br>リージョンはAPIで作成するため空設定です。
 /resources/chat.fxml          | JavaFXで使用するFXMLファイル。
 /resources/chat.css           | JavaFXで使用するCSSファイル。
