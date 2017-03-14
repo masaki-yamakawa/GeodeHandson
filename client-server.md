@@ -1,16 +1,17 @@
 ## ŠT—v
 
-Embeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠì¬‚Å‚ÍAƒAƒvƒŠƒP[ƒVƒ‡ƒ“’†‚Éƒf[ƒ^‚ÌŠÇ—‚ğs‚¤Geode‚ğ‘g‚İ‚Ş•û–@‚ğŠw‚Ñ‚Ü‚µ‚½B
+Embeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠì¬‚Å‚ÍAJavaƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Ì’†‚Éƒf[ƒ^‚ÌŠÇ—‚ğs‚¤Geode‚ğ‘g‚İ‚Ş•û–@‚ğŠw‚Ñ‚Ü‚µ‚½B
 Ÿ‚ÍAƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Æƒf[ƒ^‚ÌŠÇ—‚ğs‚¤ƒvƒƒZƒX‚ğ•ÊX‚É‚·‚éƒNƒ‰ƒCƒAƒ“ƒg-ƒT[ƒo[Œ^‚Ì•û–@‚ğŠw‚Ñ‚Ü‚·B
 
 
 ## g—p‚·‚éƒ\[ƒXAƒtƒ@ƒCƒ‹‚Ìà–¾
 
-ƒ\[ƒX/ƒtƒ@ƒCƒ‹               | à–¾
------------------------------ | --------------------------------------------
-geode.handson.cui.ChatClient  | ƒNƒ‰ƒCƒAƒ“ƒg-ƒT[ƒo[Œ^‚Ìƒ`ƒƒƒbƒgƒAƒvƒŠ‚ÌMainƒNƒ‰ƒX‚Å‚·B<br>‰Šúó‘Ô‚Å‚ÍEmbeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠ‚Æ“¯‚¶À‘•‚Æ‚È‚è‚Ü‚·B
-/resources/gemfire.properties | iEmbeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠì¬‚Æ‹¤—Lj
-/resources/clientcache.xml    | ƒNƒ‰ƒCƒAƒ“ƒgƒLƒƒƒbƒVƒ…iƒŠ[ƒWƒ‡ƒ“j‚ğİ’è‚·‚é‚½‚ß‚Ìƒtƒ@ƒCƒ‹‚Å‚·B<br>ƒfƒtƒHƒ‹ƒg‚Å‚ÍEmbeddedƒ‚[ƒh‚Åg—p‚µ‚½cache.xml‚ªg—p‚³‚ê‚Ä‚µ‚Ü‚¤‚½‚ßAgemfire.properties‚Ìcache-xml-file‚ğ•ÏX‚·‚é‚©API‚Å•ÏX‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
+ƒ\[ƒX/ƒtƒ@ƒCƒ‹                       | à–¾
+------------------------------------- | --------------------------------------------
+geode.handson.cui.ChatClient          | ƒNƒ‰ƒCƒAƒ“ƒg-ƒT[ƒo[Œ^‚Ìƒ`ƒƒƒbƒgƒAƒvƒŠ‚ÌMainƒNƒ‰ƒX‚Å‚·B<br>‰Šúó‘Ô‚Å‚ÍEmbeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠ‚Æ“¯‚¶À‘•‚Æ‚È‚è‚Ü‚·B
+geode.handson.cui.ChatMessageListener | iEmbeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠì¬‚Æ‹¤—Lj
+/resources/gemfire.properties         | iEmbeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠì¬‚Æ‹¤—Lj
+/resources/clientcache.xml            | ƒNƒ‰ƒCƒAƒ“ƒgƒLƒƒƒbƒVƒ…iƒŠ[ƒWƒ‡ƒ“j‚ğİ’è‚·‚é‚½‚ß‚Ìƒtƒ@ƒCƒ‹‚Å‚·B<br>ƒfƒtƒHƒ‹ƒg‚Å‚ÍEmbeddedƒ‚[ƒh‚Åg—p‚µ‚½cache.xml‚ªg—p‚³‚ê‚Ä‚µ‚Ü‚¤‚½‚ßAgemfire.properties‚Ìcache-xml-file‚ğ•ÏX‚·‚é‚©API‚Å•ÏX‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
 
 
 ## ƒƒP[ƒ^[AƒLƒƒƒbƒVƒ…ƒT[ƒo[‚Ì‹N“®
@@ -20,8 +21,11 @@ geode.handson.cui.ChatClient  | ƒNƒ‰ƒCƒAƒ“ƒg-ƒT[ƒo[Œ^‚Ìƒ`ƒƒƒbƒgƒAƒvƒŠ‚ÌMainƒNƒ
 
 ``` sh
 {geode_install_dir}/bin/gfsh
+```
 
-    _________________________     __
+‹N“®‚·‚é‚ÆŸ‚Ì‚æ‚¤‚È‰æ–Ê‚ª•\¦‚³‚ê‚Ü‚·B
+
+``` sh    _________________________     __
    / _____/ ______/ ______/ /____/ /
   / /  __/ /___  /_____  / _____  /
  / /__/ / ____/  _____/ / /    / /
@@ -31,7 +35,7 @@ Monitor and Manage Apache Geode
 gfsh>
 ```
 
-gfsh‚ª‹N“®‚µ‚½‚çˆÈ‰º‚ÌƒRƒ}ƒ“ƒh‚ğg—p‚µ‚ÄƒƒP[ƒ^[AƒLƒƒƒbƒVƒ…ƒT[ƒo[‚Ì‡‚É‹N“®‚µ‚Ü‚·B
+gfsh‚ğ‹N“®‚µ‚½‚çˆÈ‰º‚ÌƒRƒ}ƒ“ƒh‚ğg—p‚µ‚ÄƒƒP[ƒ^[AƒLƒƒƒbƒVƒ…ƒT[ƒo[‚Ì‡‚É‹N“®‚µ‚Ü‚·B
 ‚±‚±‚Å‚ÍMyLocatorAMyCacheServer1‚Æ‚¢‚¤–¼‘O‚ğ‚Â‚¯‚Ä‹N“®‚µ‚Ä‚¢‚Ü‚·B
 ƒƒO‚âƒƒ^ƒf[ƒ^“™‚Ígfsh‚ğ‹N“®‚µ‚½ƒfƒBƒŒƒNƒgƒŠ”z‰º‚É‚±‚ê‚ç‚Ì–¼‘O‚ÌƒfƒBƒŒƒNƒgƒŠ‚ªì¬‚³‚êo—Í‚³‚ê‚Ü‚·B
 
@@ -55,7 +59,7 @@ gfsh>start server --name=MyCacheServer1
 > ’â~‚µ‚È‚¢ê‡‚Íƒ^ƒXƒNƒ}ƒl[ƒWƒƒ[‚æ‚èI—¹‚³‚¹A“–ŠYƒfƒBƒŒƒNƒgƒŠ‚ğˆê“xíœ‚µ‚ÄÄ“x‹N“®‚µ‚Ä‚­‚¾‚³‚¢B
 
 
-ƒNƒ‰ƒXƒ^[‚Ìó‘Ô‚ğŠm”F‚·‚é‚É‚Ílist members‚ğg—p‚·‚é‚©WebƒRƒ“ƒ\[ƒ‹Pulse‚ğg—p‚µ‚Ü‚·B
+ƒNƒ‰ƒXƒ^[‚Ìó‘Ô‚ğŠm”F‚·‚é‚É‚Ígfsh‚Ålist membersƒRƒ}ƒ“ƒh‚ğg—p‚·‚é‚©AWebŠÇ—ƒRƒ“ƒ\[ƒ‹‚ÌPulse‚ğg—p‚µ‚Ü‚·B
 Pulse‚Íadmin/admin‚ÅƒƒOƒCƒ“‚Å‚«‚Ü‚·B
 ¶ã‚ÌCluster View‚ÅƒNƒ‰ƒXƒ^[‚ÌŠÇ—‚ğAData Browser‚ÅOQL‚É‚æ‚éƒf[ƒ^QÆ‚ª‰Â”\‚Å‚·B
 
@@ -79,7 +83,7 @@ gfsh>create region --name=ChatMessage --type=PARTITION
 
 ## ƒNƒ‰ƒCƒAƒ“ƒgƒLƒƒƒbƒVƒ…‚Ìì¬
 
-ƒNƒ‰ƒCƒAƒ“ƒgƒLƒƒƒbƒVƒ…‚ğì¬‚·‚éê‡‚àƒLƒƒƒbƒVƒ…‚ğì¬‚·‚éê‡‚Æ“¯—l‚ÌŠ´Šo‚Ås‚¤‚±‚Æ‚ªo—ˆ‚Ü‚·B
+ƒNƒ‰ƒCƒAƒ“ƒgƒLƒƒƒbƒVƒ…‚ğì¬‚·‚éê‡‚àAƒLƒƒƒbƒVƒ…‚ğì¬‚·‚éê‡‚Æ“¯—l‚ÌŠ´Šo‚Ås‚¤‚±‚Æ‚ªo—ˆ‚Ü‚·B
 ì¬‚É‚ÍClientCacheFactory‚ğg—p‚µ‚Ü‚·B
 
 ¡‰ñ‚ÍAChatClient.java‚Ìæ“ª‚ÉŸ‚Ì‚æ‚¤‚É’Ç‰Á‚µ‚Ü‚·B
@@ -88,9 +92,10 @@ gfsh>create region --name=ChatMessage --type=PARTITION
 Properties props = new Properties();
 props.setProperty("cache-xml-file", "clientcache.xml");
 ClientCacheFactory factory = new ClientCacheFactory(props);
+ClientCache cache = factory.create();
 ```
 
-Properties‚Öcache-xml-file‚ğw’è‚·‚é‚±‚Æ‚ÅAƒfƒtƒHƒ‹ƒg‚Ìcache.xml‚©‚çg—p‚·‚éİ’èƒtƒ@ƒCƒ‹‚ğ•ÏX‚µ‚Ä‚¢‚Ü‚·B
+Properties‚Öcache-xml-file‚ğw’è‚·‚é‚±‚Æ‚ÅAƒfƒtƒHƒ‹ƒg‚Ìcache.xml‚Ì’l‚ğã‘‚«‚µ‚ÄA¡‰ñg—p‚·‚éİ’èƒtƒ@ƒCƒ‹–¼‚Ö•ÏX‚µ‚Ä‚¢‚Ü‚·B
 
 
 ## ƒNƒ‰ƒCƒAƒ“ƒgƒŠ[ƒWƒ‡ƒ“‚Ìì¬
@@ -98,7 +103,7 @@ Properties‚Öcache-xml-file‚ğw’è‚·‚é‚±‚Æ‚ÅAƒfƒtƒHƒ‹ƒg‚Ìcache.xml‚©‚çg—p‚·‚éİ’
 Ÿ‚ÉƒŠ[ƒWƒ‡ƒ“‚ğì¬‚µ‚Ü‚·B
 ƒNƒ‰ƒCƒAƒ“ƒg‘¤‚É‚à–¾¦“I‚Ég—p‚·‚éƒŠ[ƒWƒ‡ƒ“‚ğì¬‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
 ¡‰ñ‚Íclientcache.xml‚ÉChatMessage‚Æ‚¢‚¤–¼‘O‚ÅCACHING_PROXYƒŠ[ƒWƒ‡ƒ“‚ğì¬‚µ‚Ü‚·B
-ƒNƒ‰ƒCƒAƒ“ƒg‚Æ‚»‚¤‚Å‚È‚¢‚à‚Ì‚Ìˆá‚¢‚ÍˆÈ‰º‚Ì“_‚Æ‚È‚è‚Ü‚·B
+ƒNƒ‰ƒCƒAƒ“ƒg‚ÆA‚»‚¤‚Å‚È‚¢‚à‚Ì‚Ìˆá‚¢‚ÍˆÈ‰º‚Ì“_‚Æ‚È‚è‚Ü‚·B
 
 - rootƒ^ƒO‚ªcache‚Å‚Í‚È‚­Aclient-cache
 - Ú‘±æ‚ğ‚ ‚ç‚í‚·pool‚ª‘¶İ‚·‚éBw’è‚µ‚Ä‚¢‚é‚Ì‚Ílocator‚ÌƒzƒXƒg–¼‚Æƒ|[ƒgBƒCƒxƒ“ƒg‚ğæ“¾‚·‚éê‡‚Ísubscription-enabled="true"‚ğİ’è‚·‚é•K—v‚ª‚ ‚é
@@ -129,7 +134,7 @@ Region<String, String> region = cache.getRegion("ChatMessage");
 
 ƒNƒ‰ƒCƒAƒ“ƒg‚ÅƒCƒxƒ“ƒg‚ğæ“¾‚·‚éê‡‚É‚ÍƒŠ[ƒWƒ‡ƒ“‚É‘Î‚µ‚Äæ“¾‘ÎÛ‚ÌƒCƒxƒ“ƒg‚ğ“o˜^‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
 ˆÈ‰º‚ÍƒL[ƒ[ƒhALL_KEYS‚Å‘S‚Ä‚ÌƒCƒxƒ“ƒg‚ğæ“¾‚·‚éê‡‚Ì—á‚Å‚·B
-‘¼‚É‚àregisterInterest‚ğ•¡”‰ñÀs‚µA“Á’è‚ÌƒL[‚ÌƒCƒxƒ“ƒg‚ğæ“¾‚µ‚½‚èAregisterInterestRegex‚ÅƒL[‚Ì³‹K•\Œ»‚ğg—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+‘¼‚É‚àregisterInterest‚ğ•¡”‰ñÀs‚µA“Á’è‚ÌƒL[‚ÌƒCƒxƒ“ƒg‚Ì‚İ‚ğæ“¾‚µ‚½‚èAregisterInterestRegex‚ÅƒL[‚Ì³‹K•\Œ»‚ğg—p‚·‚é‚±‚Æ‚à‚Å‚«‚Ü‚·B
 
 ``` java
 region.registerInterest("ALL_KEYS");
