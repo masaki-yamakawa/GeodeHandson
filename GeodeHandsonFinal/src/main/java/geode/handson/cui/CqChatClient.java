@@ -42,6 +42,7 @@ public class CqChatClient {
 			// CQを作成して実行
 			QueryService qService = cache.getQueryService();
 			CqQuery cqQuery = qService.newCq("select * from /ChatMessage", cqAttr);
+//			CqQuery cqQuery = qService.newCq("select * from /ChatMessage cm where cm like '%NG Word%'", cqAttr);
 			cqQuery.execute();
 
 			System.out.println("Enter Username.");
