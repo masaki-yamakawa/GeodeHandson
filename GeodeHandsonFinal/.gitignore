@@ -1,3 +1,5 @@
 /target/
+/build/
+/.gradle/
 /locator*view.dat
 /locator*views.log

@@ -1,0 +1,19 @@
+apply plugin: "java"
+apply plugin: "eclipse"
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+version = 1.0
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.apache.geode:geode-core:1.1.1'
+	testCompile "junit:junit:4.12" 
+}
+
+compileJava {
+	options.encoding = 'UTF-8'
+}
