@@ -9,6 +9,7 @@ GeodeHandsonディレクトリは、このチュートリアルを開始する時点でのJavaプロジェクト
 1. [クライアント-サーバ型のCUIチャットアプリ作成](client-server.md)
 1. [GUIチャットアプリ作成](gui.md)
 1. [レプリケーションとパーティションのイベント](replicate-partition.md)
+1. [Continuous Query](continuous-query.md)
 
 全ての演習が終了したときには、このようなチャットアプリが少ないコード量で出来ています。
 
