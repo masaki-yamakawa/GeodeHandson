@@ -17,6 +17,11 @@
       <artifactId>geode-core</artifactId>
       <version>${geode.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.geode</groupId>
+      <artifactId>geode-cq</artifactId>
+      <version>${geode.version}</version>
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>
