@@ -10,10 +10,19 @@ repositories {
 }
 
 dependencies {
-	compile 'org.apache.geode:geode-core:1.1.1'
-	testCompile "junit:junit:4.12" 
+	implementation 'org.apache.geode:geode-core:1.12.0'
+
+	implementation 'org.slf4j:slf4j-log4j12:1.7.30'
+	implementation 'org.apache.logging.log4j:log4j-api:2.13.2'
+	implementation 'org.apache.logging.log4j:log4j-core:2.13.2'
+
+	testImplementation 'junit:junit:4.12'
 }
 
 compileJava {
 	options.encoding = 'UTF-8'
+}
+
+tasks.withType(JavaCompile) {
+	options.compilerArgs << '-Xlint:deprecation'
 }

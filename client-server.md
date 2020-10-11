@@ -29,7 +29,7 @@ geode.handson.cui.ChatMessageListener | iEmbeddedƒ‚[ƒh‚ÌCUIƒ`ƒƒƒbƒgƒAƒvƒŠì¬‚
    / _____/ ______/ ______/ /____/ /
   / /  __/ /___  /_____  / _____  /
  / /__/ / ____/  _____/ / /    / /
-/______/_/      /______/_/    /_/    1.1.0
+/______/_/      /______/_/    /_/    1.12.0
 
 Monitor and Manage Apache Geode
 gfsh>
