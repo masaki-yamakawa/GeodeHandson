@@ -13,15 +13,6 @@ import org.apache.geode.cache.util.CacheListenerAdapter;
 public class ChatMessageListener extends CacheListenerAdapter<String, String> implements Declarable {
 
 	/**
-	 * このイベントハンドラクラスを初期化します。<br>
-	 * このクラスでは特に何も行いません。<br>
-	 * @param props Propertiesオブジェクト
-	 */
-	@Override
-	public void init(Properties props) {
-	}
-
-	/**
 	 * イベントとして取得したチャットメッセージを標準出力へ出力します。<br>
 	 * 出力フォーマット：{Key} > {Value}<br>
 	 * @param event EntryEventオブジェクト
