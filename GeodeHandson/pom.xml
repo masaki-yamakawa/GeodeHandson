@@ -8,7 +8,7 @@
   <properties>
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <geode.version>1.12.0</geode.version>
+    <geode.version>1.12.5</geode.version>
   </properties>
 
   <dependencies>
